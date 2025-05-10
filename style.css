@@ -312,10 +312,6 @@ body {
     .hero.container, .page-section.container { /* Apply to hero and page-section */
       max-width: 95%; /* Make the container take up 95% of the viewport width */
     }
-
-    .social-icon-project{
-      
-    }
   }
 
   /* Contact Page */
