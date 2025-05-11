@@ -131,6 +131,19 @@ body {
     border-radius: 2rem; /* Consistent with hero section */
   }
 
+  @media (max-width: 850px) {
+    .hero {
+      flex-direction: column;
+      flex-direction: column-reverse; /* Reverses the order of flex items, making the image appear on top */
+      text-align: center;
+    }
+
+    .profile-img {
+      margin-top: 2rem;
+      margin-bottom: 2rem; /* Was margin-top; changed to margin-bottom to space it from text now below it */
+    }
+  }
+
   @media (min-width: 1200px) { /* For XL screens (1200px) and wider */
     .hero.container {
       max-width: 95%; /* Make the hero container take up 95% of the viewport width */
