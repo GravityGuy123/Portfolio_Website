@@ -1,0 +1,408 @@
+/* Home Page */
+body {
+    background-color: #0d1117;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(1, 238, 254, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .navbar-toggler{
+      border: 2px solid rgb(1, 238, 254);
+    }
+
+  .navbar {
+    /* background-color: #161b22; */
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    color: #fff !important;
+    margin: 0 0.75rem;
+    transition: color 0.3s, background-color 0.3s; /* Smooth transition for background */
+    width: 5em;                         /* Set a fixed width */
+    text-align: center;                 /* Center text within the fixed width */
+    border-radius: 0.5em;               /* Apply border-radius to the link itself */
+  }
+
+  .nav-link.active {
+    color: #00ffff !important;
+  }
+
+  .nav-link:hover {
+    color: black !important;             /* Text color on hover */
+    background-color: #00ffff !important; /* Background color on hover */
+  }
+  .hero {
+    margin-top: 3rem;
+    padding: 3rem;
+    background-color: #161b22;
+    border-radius: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+    color: #00ffff;
+    font-weight: 600;
+  }
+
+  .hero-text p {
+    color: #aaa;
+    max-width: 400px;
+    margin: 1rem 0;
+  }
+
+  .social-icons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 2.2rem;
+  }
+
+  .social-icons a:hover{
+      border-bottom: 2px solid white;
+  }
+
+  .btn-custom {
+    background-color: #00ffff;
+    color: #000;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    border: none;
+    margin-top: 1rem;
+  }
+
+  .btn-custom:hover{
+      background-color: white;
+      color: black;
+  }
+
+  .profile-img {
+    background: #00ffff;
+    padding: 1rem;
+    width: fit-content;
+    /* Reverting to box-shadow for desired visibility with clip-path */
+    /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
+    /* filter: drop-shadow(0 0 1300); */
+    box-shadow: 0 0 30px #00ffff;
+    border-radius: 3em;
+  }
+
+  .profile-img img {
+    border-radius: 9em;
+    max-width: 250px;
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .profile-img {
+      margin-top: 2rem;
+    }
+  }
+
+  .page-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    background-color: #161b22; /* Consistent with hero section */
+    border-radius: 2rem; /* Consistent with hero section */
+  }
+
+  @media (max-width: 900px) {
+    .hero {
+      flex-direction: column;
+      flex-direction: column-reverse; /* Reverses the order of flex items, making the image appear on top */
+      text-align: center;
+    }
+
+    .profile-img {
+      margin-top: 2rem;
+      margin-bottom: 2rem; /* Was margin-top; changed to margin-bottom to space it from text now below it */
+    }
+  }
+
+  @media (min-width: 701px) and (max-width: 1200px) {
+    .profile-img {
+      margin-top: 2rem;
+      ;
+    }
+  }
+
+  /* @media screen and (min-width: 700px) and (max-width: 900px) */
+
+  @media (min-width: 1200px) { /* For XL screens (1200px) and wider */
+    .hero.container {
+      max-width: 95%; /* Make the hero container take up 95% of the viewport width */
+    }
+  }
+
+  /* About Page */
+  .hero-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+    color: #00ffff;
+    font-weight: 600;
+  }
+
+  .hero-text p {
+    color: #aaa;
+    max-width: 400px;
+    margin: 1rem 0;
+  }
+
+  .about-me-text, .title{
+      color: #00ffff;
+  }
+
+  .page-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    background-color: #161b22; /* Consistent with hero section */
+    border-radius: 2rem; /* Consistent with hero section */
+  }
+
+  @media (min-width: 1200px) { /* For XL screens (1200px) and wider */
+    .hero.container, .page-section.container { /* Apply to hero and page-section */
+      max-width: 95%; /* Make the container take up 95% of the viewport width */
+    }
+  }
+
+  /* Skills Page */
+
+  .hero-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+    color: #00ffff;
+    font-weight: 600;
+  }
+
+  .hero-text p {
+    color: #aaa;
+    max-width: 400px;
+    margin: 1rem 0;
+  }
+
+  .page-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    background-color: #161b22; /* Consistent with hero section */
+    border-radius: 2rem; /* Consistent with hero section */
+  }
+
+  .skill-card {
+      background-color: #0d1117; /* Darker background for cards */
+      border: 2px solid #00ffff30; /* Increased border width */
+      color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition */
+  }
+  .skill-card:hover {
+      transform: translateY(-5px); /* Lift effect on hover */
+      box-shadow: 0 8px 24px #00ffff60; /* Brighter box-shadow on hover */
+  }
+  .skill-card .card-title {
+      color: #00ffff;
+  }
+  .skill-card .list-group-item {
+      background-color: transparent;
+      border-color: #00ffff30;
+      color: #ccc;
+  }
+
+  @media (min-width: 1200px) { /* For XL screens (1200px) and wider */
+    .hero.container, .page-section.container { /* Apply to hero and page-section */
+      max-width: 95%; /* Make the container take up 95% of the viewport width */
+    }
+  }
+
+  /* Portfolio Page */
+  .hero-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+    color: #00ffff;
+    font-weight: 600;
+  }
+
+  .hero-text p {
+    color: #aaa;
+    max-width: 400px;
+    margin: 1rem 0;
+  }
+
+  .project-image{
+    display: block;    /* Ensure block-level for consistent margin behavior */
+    width: 100%;       /* Take full width of the parent container */
+    max-width: 100%;   /* Prevent overflow if parent has padding or image is intrinsically larger */
+    height: auto;      /* Maintain aspect ratio */
+    margin-left: auto; /* Center the element (if its effective width is less than parent's) */
+    margin-right: auto;/* Center the element (if its effective width is less than parent's) */
+  }
+
+  .portfolio-card img.project-image-1 { /* Increased specificity to override .portfolio-card img */
+    display: block;         /* Ensures proper box model behavior for width/height/margins */
+    width: 100%;            /* Makes the image attempt to fill its container's width */
+    max-width: 100%;        /* Crucially prevents the image from overflowing its container */
+    height: auto;           /* Maintains the image's natural aspect ratio as width changes */
+    object-fit: contain;    /* This will now take precedence: ensures the entire image is visible */
+    aspect-ratio: auto;     /* This will now take precedence: allows the image to use its natural aspect ratio */
+    margin-left: auto;      /* Centers the image horizontally */
+    margin-right: auto;     /* Centers the image horizontally */
+    box-sizing: border-box; /* Ensures padding/border are included in width/height calculation */
+  }
+
+  .btn-custom {
+    background-color: #00ffff;
+    color: #000;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    border: none;
+    margin-top: 1rem;
+  }
+
+  .btn-custom:hover{
+      background-color: white;
+      color: black;
+  }
+  
+  .page-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    background-color: #161b22; /* Consistent with hero section */
+    border-radius: 2rem; /* Consistent with hero section */
+  }
+
+  .portfolio-card {
+      background-color: #0d1117;
+      border: 2px solid #00ffff30; /* Increased border width */
+      color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .portfolio-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px #00ffff60; /* Made box-shadow brighter and slightly larger spread */
+  }
+  .portfolio-card .card-title {
+      color: #00ffff;
+  }
+  .portfolio-card .card-text {
+      color: #ccc;
+  }
+  .portfolio-card img {
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+  }
+
+  @media (min-width: 1200px) { /* For XL screens (1200px) and wider */
+    .hero.container, .page-section.container { /* Apply to hero and page-section */
+      max-width: 95%; /* Make the container take up 95% of the viewport width */
+    }
+  }
+
+  /* Contact Page */
+  .hero-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .hero-text h2 {
+    font-size: 1.5rem;
+    color: #00ffff;
+    font-weight: 600;
+  }
+
+  .hero-text p {
+    color: #aaa;
+    max-width: 400px;
+    margin: 1rem 0;
+  }
+
+  .social-icons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 2.2rem;
+  }
+
+  .social-icons a:hover{
+      border-bottom: 2px solid white;
+  }
+
+  .btn-custom {
+    background-color: #00ffff;
+    color: #000;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 600;
+    border: none;
+    margin-top: 1rem;
+  }
+
+  .btn-custom:hover{
+      background-color: white;
+      color: black;
+  }
+
+  .page-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    background-color: #161b22; /* Consistent with hero section */
+    border-radius: 2rem; /* Consistent with hero section */
+  }
+  .form-control, .form-select {
+      background-color: #0d1117;
+      color: #fff;
+      border: 1px solid #00ffff80;
+  }
+  .form-control:focus, .form-select:focus {
+      background-color: #161b22;
+      color: #fff;
+      border-color: #00ffff;
+      box-shadow: 0 0 0 0.25rem rgba(0, 255, 255, 0.25);
+  }
+  .form-control::placeholder {
+      color: #aaa;
+  }
+
+  @media (min-width: 1200px) { /* For XL screens (1200px) and wider */
+    .hero.container, .page-section.container { /* Apply to hero and page-section */
+      max-width: 95%; /* Make the container take up 95% of the viewport width */
+    }
+  }
